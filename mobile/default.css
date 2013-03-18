@@ -1,0 +1,75 @@
+ul {
+	list-style-position: inside;
+	margin: 10px 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 160%;
+}
+
+
+body li {
+	color: #666666;
+	font-size: 13px;
+	line-height: 160%;
+	padding: 5px 0 5px .5em;
+	text-indent: -.5em;
+	list-style: square inside;
+}
+
+body {
+background: none
+}
+
+select {
+display: block;
+}
+
+#title {
+color: #fff;
+font-size: medium;
+text-align: left;
+height: 40px;
+border: none;
+padding: 0 5px 0 30px;
+margin: 0;
+background-color: #003366;
+background-image: linear-gradient(left , rgb(0,51,102) 2%, rgb(49,143,198) 51%);
+background-image: -o-linear-gradient(left , rgb(0,51,102) 2%, rgb(49,143,198) 51%);
+background-image: -moz-linear-gradient(left , rgb(0,51,102) 2%, rgb(49,143,198) 51%);
+background-image: -webkit-linear-gradient(left , rgb(0,51,102) 2%, rgb(49,143,198) 51%);
+background-image: -ms-linear-gradient(left , rgb(0,51,102) 2%, rgb(49,143,198) 51%);
+background-image: -webkit-gradient(
+	linear,
+	left top,
+	right top,
+	color-stop(0.02, rgb(0,51,102)),
+	color-stop(0.51, rgb(49,143,198))
+);
+}
+
+#topbar {
+background: url("path/to/secondary-background-2.jpg") no-repeat center top transparent;
+padding-bottom: 120px;
+}
+
+.graytitle {
+background: none repeat scroll 0 0 #F5F4F0;
+border: 1px solid #DEDBD1;
+padding: 2%;
+width: 90%;
+margin: 0 0 15px;
+color: #003366;
+font-size: 20px;
+text-shadow: none;
+font-weight: normal;
+text-transform: none;
+display: block;
+}
+
+.textbox{
+list-style: none;
+}
+
+.menu .name, .checkbox .name, .radiobutton .name {
+    overflow: visible;
+}

@@ -1,0 +1,489 @@
+@import url(bootstrap.css);
+/*
+ * Default site settings and information
+ *
+ */
+
+html {
+	font-family: Arial, Helvetica, sans-serif;
+	background: url("path/to/tile-background.jpg") repeat scroll 0 0 #F5F2E8;
+	font-size: 13px;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background: url("path/to/title-background.jpg") no-repeat center top transparent;
+	font-size: 13px;
+	margin: 0;
+	height: 100%;
+	padding: 0;
+	width: 100%;
+	word-wrap: break-word;
+}
+
+
+h1 {
+	color: #003366;
+	font-size: 20px;
+	border-bottom: 5px solid #003366;
+}
+
+a {
+	text-decoration: none;
+	color: #336699;
+}
+
+p {
+	font-size: 14px;
+	line-height: 160%;
+	color: #666666;
+	padding: 5px 0 5px 0;
+}
+
+ul {
+	list-style-position: inside;
+	margin: 10px 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 160%;
+}
+
+
+#content li {
+	color: #666666;
+	font-size: 13px;
+	line-height: 160%;
+	padding: 5px 0 5px .5em;
+	text-indent: -.5em;
+	list-style: square inside;
+}
+
+#content h2 {
+	color: #003366 !important;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 12px;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+
+#group_desc li {
+	color: #666666;
+	font-size: 13px;
+	line-height: 160%;
+	padding: 0px 0 0px .5em;
+	text-indent: -.5em;
+	list-style: square inside;
+}
+
+#groupsel {
+	margin-top: -11px;
+	font-size: 20px;
+}
+
+/*
+ * Site wrapper 
+ *
+ */
+
+#wrapper {
+	background: none;
+}
+
+/*
+ * Custom Marquette Header
+ *
+ */
+
+#marquettehead {
+	height: 35px;
+	position: absolute;
+	top: 0;
+	margin-top: -92px;
+	-moz-box-shadow: 0 4px 9px 0 #333;
+	-webkit-box-shadow: 0 4px 9px 0 #333;
+	box-shadow: 0 4px 9px 0 #333;
+	transition: all .2s linear;
+	-o-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+	background-color: #003366;
+	z-index: 1;
+}
+
+/* Blue gradient */
+#bluegrad {	
+	position: absolute;
+	float: left;
+	max-width: 2200px;
+	background-color: transparent;
+	height: 35px;
+	background-image: linear-gradient(left , rgb(0,51,102) 20%, rgb(49,143,198) 51%);
+	background-image: -o-linear-gradient(left , rgb(0,51,102) 20%, rgb(49,143,198) 51%);
+	background-image: -moz-linear-gradient(left , rgb(0,51,102) 20%, rgb(49,143,198) 51%);
+	background-image: -webkit-linear-gradient(left , rgb(0,51,102) 20%, rgb(49,143,198) 51%);
+	background-image: -ms-linear-gradient(left , rgb(0,51,102) 20%, rgb(49,143,198) 51%);
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(0.20, rgb(0,51,102)),
+		color-stop(0.51, rgb(49,143,198))
+	);
+	z-index: -1;
+}
+
+/* Gold bar at the end of the header */
+#goldbar {
+	float: left;
+	width: 10px;
+	background: #ffcc00;
+	height: 35px;
+	z-index: 2;
+}
+
+/* Main Menu & Customizations */
+#mmenu {
+	width: 960px;
+	margin: 0 auto;
+	height: 100%;
+	z-index: 100
+}
+
+#mmenu span#siteName a.marquette {
+	color: #fff;
+	letter-spacing: 5px;
+	font-family: 'Univers LT W01 55 Roman', arial;
+	text-shadow: 0.1em 0.1em #333;
+	padding: 9px 6px;
+	margin-right: 25px;
+}
+
+#mmenu span#siteName:hover a {
+	text-shadow: none;
+	color: #666;
+}
+
+#menu span {
+	float: none;
+	width: auto;
+	padding: 0;
+	display: inline;
+	text-align: center;
+	font-size: 1em;
+	margin: 0;
+	zoom: 1;
+	z-index: 10;
+}
+
+#mmenu span a {
+	font-family: 'Univers LT W01 55 Roman', arial;
+	text-transform: uppercase;
+	overflow: hidden;
+	color: #ffcc00;
+	display: inline-block;
+	padding: 9px 17px;
+	text-align: center;
+	font-size: 15px;
+	z-index: 11;
+}
+
+#mmenu span a:hover {
+	text-decoration: none;
+}
+
+#mmenu span:hover a {
+	color: #666;
+	background: #cccccc;
+	text-decoration: none;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJod…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #cccccc 0%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cccccc), color-stop(100%, #ffffff));
+	background: -webkit-linear-gradient(top, #cccccc 0%, #ffffff 100%);
+	background: -o-linear-gradient(top, #cccccc 0%, #ffffff 100%);
+	background: -ms-linear-gradient(top, #cccccc 0%, #ffffff 100%);
+	background: linear-gradient(to bottom, #cccccc 0%, #ffffff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#ffffff', GradientType=0 );
+}
+
+/*
+ * Container area
+ *
+ */
+
+
+#container {
+	background: none;
+	background-color: #fff;
+	top: 127px;
+	position: absolute;
+	padding: 30px 30px 60px 30px;
+	min-height: 700px;
+	-moz-box-shadow: 0px 3px 7px #888888;
+	-webkit-box-shadow: 0px 3px 7px #888888;
+	box-shadow: 0px 3px 7px #888888;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=30, Color='#888888')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=30, Color='#888888');
+}
+
+
+/*
+ * Breadcrumb modifications
+ *
+ */
+
+.breadcrumbs a {
+	color: #999999;
+	font-size: 11px;
+}
+
+/* Admin bar modifications */
+.breadcrumbsr {
+	display: block;
+	position: fixed;
+	background: #336699;
+	z-index: 1002;
+	bottom: 0;
+	right: 3px;
+	height: 13px;
+	border: 3px solid #fff;
+	color: #fff;
+	padding: 10px 5px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	-moz-box-shadow: 0 4px 9px 0 #333;
+	-webkit-box-shadow: 0 4px 9px 0 #333;
+	box-shadow: 0 4px 9px 0 #333;
+	border-bottom: none;
+	float: none !important;
+}
+
+.breadcrumbsr a {
+	color: #fff;
+	text-decoration: underline;
+}
+
+/*
+ * Left content area
+ * Since this area is usually hidden, we just need to remove the margin and padding
+ */
+
+#contentleft {
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * Right content area
+ * This area also contains the Book a Room box, so it has to be customized as well
+ */
+#contentright {
+	margin-right: 0;
+	margin-left: 24px
+}
+
+#contentright #room_box {
+	margin-top: -82px;
+	position: relative;
+	transition: all .2s linear;
+	-o-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+	background: none;
+}
+
+#contentright #room_box .headerbox {
+	padding: 24px 0 24px 40px;
+	background: #ffcc00;
+	-moz-box-shadow: 0px 3px 7px #888888;
+	-webkit-box-shadow: 0px 3px 7px #888888;
+	box-shadow: 0px 3px 7px #888888;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=30, Color='#888888')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=30, Color='#888888');
+	border-radius: 0;
+	margin-bottom: 0;
+}
+
+#contentright #room_box .headerbox h2 {
+	color: #FFFFFF !important;
+	font-family: 'Univers LT W10 75 Black', arial;
+	font-size: 18px;
+	margin: 0;
+	text-transform: uppercase;
+	padding: 0;
+	text-shadow: 1px 1px 3px #888888;
+	line-height: 100%;
+}
+
+#contentright #room_box .innerbox {
+	background: #fde998;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2bb', endColorstr='#fde998');
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff2bb), to(#fde998));
+	background: -moz-linear-gradient(top, #fff2bb, #fde998);
+	-moz-box-shadow: 0px 3px 7px #888888;
+	-webkit-box-shadow: 0px 3px 7px #888888;
+	box-shadow: 0px 3px 7px #888888;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=90, Color='#888888')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=90, Color='#888888');
+	font-size: 10px;
+	line-height: 19px;
+	border-radius: 0;
+	font-size: 13px;
+	padding: 20px 25px;
+	margin-top: -5px;
+	z-index; 1;
+}
+
+#contentright #room_box img {
+	background: #fde998;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2bb', endColorstr='#fde998');
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff2bb), to(#fde998));
+	background: -moz-linear-gradient(top, #fff2bb, #fde998);
+	-moz-box-shadow: 0px 3px 7px #888888;
+	-webkit-box-shadow: 0px 3px 7px #888888;
+	box-shadow: 0px 3px 7px #888888;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=90, Color='#888888')";
+	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=90, Color='#888888');
+	font-size: 10px;
+	line-height: 19px;
+	border-radius: 0;
+	font-size: 13px;
+	z-index: 0;
+}
+
+.sidelist ul,
+#content .sidelist ul li {
+	list-style-type: none;
+}
+
+.sidelist ul li a {
+	font-size: 13px;
+	margin: 0;
+	line-height: 11px;
+	color: #003366;
+	font-weight: bold;
+}
+
+.sidelist ul li {
+	padding: 10px 40px 5px 0;
+}
+
+
+
+/*
+ * Left content area for the Room Picker
+ * Mostly removing backgrounds
+ */
+
+.ui-datepicker, #nick_box_inner, #groupView {
+	border: 1px solid #eee;
+}
+
+#groupView {
+	background: none;
+}
+
+.headerbox {
+	padding: none;
+	background: none;
+}
+
+div.roundbox {
+	border-radius: none;
+	-webkit-border-radius: none;
+	-moz-border-radius: none;
+}
+
+.outerbox {
+	background-color: #fff;
+}
+
+#form_box {
+	border: none;
+	margin: 0px -2px 15px 8px;
+	background: none;
+}
+
+/*
+ * Room availability and booked blocks for the date picker
+ * 
+ */
+.reg_input {
+	width: 350px
+}
+
+/*
+ * Room availability and booked blocks for the date picker
+ * Booked gets turned red and the available ones are turned more of a Marquette Blue
+ */
+
+.lc_rm_b {
+	background-color: rgba(255, 0, 0, 0.66);
+}
+
+.lc_rm_a, #roomleg_avai div {
+	background-color: rgba(0, 51, 102, 0.75);
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.75);
+	box-shadow: 0 1px 3px rgba(0,0,0,0.75);
+}
+
+.lc_rm_a:hover {
+	background-color: #003366;
+	background-image: -webkit-gradient(linear,left top,left bottom,from( #6facd5 ),to( #003366 ));
+	background-image: -webkit-linear-gradient( #6facd5,#003366 );
+	background-image: -moz-linear-gradient( #6facd5,#003366 );
+	background-image: -ms-linear-gradient( #6facd5,#003366 );
+	background-image: -o-linear-gradient( #6facd5,#003366 );
+	background-image: linear-gradient( to bottom, #6facd5 0%,#003366 100% );
+	color: transparent;
+}
+
+.lc_rm_a:active {
+	color: transparent !important;
+	background: #003366;
+	background-image: -webkit-gradient(linear,left top,left bottom,from( #6facd5 ),to( #003366 ));
+	background-image: -webkit-linear-gradient( #6facd5,#003366 );
+	background-image: -moz-linear-gradient( #6facd5,#003366 );
+	background-image: -ms-linear-gradient( #6facd5,#003366 );
+	background-image: -o-linear-gradient( #6facd5,#003366 );
+	background-image: linear-gradient(to bottom, #6facd5 0%,#003366 100%);
+	-moz-box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+	-webkit-box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+	box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+}
+
+.lc_rm_t {
+	color: transparent;
+	background-color: #ffcc00;
+}
+
+.lc_rm_t:hover {
+	background-color: #ffcc00;
+	background-image: -webkit-gradient(linear,left top,left bottom,from( #fef195 ),to( #ffcc00 ));
+	background-image: -webkit-linear-gradient( #fef195,#ffcc00 );
+	background-image: -moz-linear-gradient( #fef195,#ffcc00 );
+	background-image: -ms-linear-gradient( #fef195,#ffcc00 );
+	background-image: -o-linear-gradient( #fef195,#ffcc00 );
+	background-image: linear-gradient( to bottom, #fef195 0%,#ffcc00 100% );
+	color: transparent;
+}
+
+.lc_rm_t:active {
+	color: transparent !important;
+	background: #003366;
+	background-image: -webkit-gradient(linear,left top,left bottom,from( #fef195 ),to( #ffcc00 ));
+	background-image: -webkit-linear-gradient( #fef195,#ffcc00 );
+	background-image: -moz-linear-gradient( #fef195,#ffcc00 );
+	background-image: -ms-linear-gradient( #fef195,#ffcc00 );
+	background-image: -o-linear-gradient( #fef195,#ffcc00 );
+	background-image: linear-gradient(to bottom, #fef195 0%,#ffcc00 100%);
+	-moz-box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+	-webkit-box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+	box-shadow: 0 0 4px 2px rgba(0,0,0,.3) inset;
+}
