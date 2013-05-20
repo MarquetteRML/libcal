@@ -1,13 +1,13 @@
-<!-- 
-	Using regular JS with custom functions 
-    to get the URL Var and Set cookie 
--->
+
+	//Using regular JS with custom functions 
+    //to get the URL Var and Set cookie 
+    
 var kiosk = getUrlVars()['kiosk'];
 
-<!-- 
-	If URL Var is true, then set the cookie for 10 Years
-	If URL Var is delete, then remove the cookie (set life to 0)
- -->
+
+	//If URL Var is true, then set the cookie for 10 Years
+	//If URL Var is delete, then remove the cookie (set life to 0)
+	
 if (kiosk == 'true'){setCookie('kiosk', true, 3650);}
 if (kiosk == 'delete'){setCookie('kiosk', false, 0);}
 
@@ -45,10 +45,10 @@ $(function () {
     
 });
 
-<!-- 
-	The following should only be called when the calendar portion of the site is called
-	However, we are still checking the body id for the word 'page' just to play it safe
--->
+
+	// The following should only be called when the calendar portion of the site is called
+	// However, we are still checking the body id for the word 'page' just to play it safe
+
 $(document).ajaxStop(function(){
      var bodyID = $('body').attr('id');
      var isRoom = bodyID.indexOf("room") !== -1;
